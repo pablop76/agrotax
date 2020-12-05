@@ -1,9 +1,9 @@
 <div class="uk-card uk-card-default uk-card-body">
-    <h3 class="uk-card-title">INFORMACJE I ZAPYTANIA</h3>
+    <h3 class="uk-card-title">{{title}}</h3>
     <form class="form" action="./form.php" method="POST">
         <div class="uk-grid-match uk-child-width-expand@s" data-uk-grid>
             <div class="form-wrapper-contol">
-                <label class="uk-form-label">Imię i nazwisko<sup>*</sup></label>
+                <label class="uk-form-label">{{name}}<sup>*</sup></label>
                 <div class="uk-form-controls">
                     <div class="uk-margin">
                         <div class="uk-inline uk-display-inline">
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="form-wrapper-contol">
-                <label class="uk-form-label">Email<sup>*</sup></label>
+                <label class="uk-form-label">{{email}}<sup>*</sup></label>
                 <div class="uk-form-controls">
                     <div class="uk-margin">
                         <div class="uk-inline uk-display-inline">
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="form-wrapper-contol">
-            <label class="uk-form-label">Telefon</label>
+            <label class="uk-form-label">{{phone}}</label>
             <div class="uk-form-controls">
                 <div class="uk-margin">
                     <div class="uk-inline uk-display-inline">
@@ -37,21 +37,18 @@
             </div>
         </div>
         <div class="form-wrapper-contol">
-            <label class="uk-form-label">Wiadomość<sup>*</sup></label>
+            <label class="uk-form-label">{{message}}<sup>*</sup></label>
             <textarea class="uk-textarea" rows="5" placeholder="" id="message" name="message" required></textarea>
         </div>
         <div class="form-wrapper-contol">
             <div class="uk-margin">
                 <input class="uk-checkbox" type="checkbox" id="chackbox" name="consent" required>
-                <label class="uk-form-label uk-display-inline" for="chackbox">Przesyłajac ten
-                    formularz, akceptujesz
-                    naszą <a href="../pages/polityka-prywatnosci.html" class="uk-link-reset">Politykę
-                        prywatności</a> oraz wyrażasz zgodę na przetwarzanie Twoich danych
-                    osobowych.<sup>*</sup></label>
+                <label class="uk-form-label uk-display-inline" for="chackbox"><a
+                        href="../pages/polityka-prywatnosci.html" class="uk-link-reset">{{privacy}}<sup>*</sup></label>
             </div>
         </div>
         <div class="form-wrapper-contol">
-            <button type="submit" class="uk-button uk-button-default uk-margin">Wyślij</button>
+            <button type="submit" class="uk-button uk-button-default uk-margin">{{send}}</button>
         </div>
     </form>
 </div>
