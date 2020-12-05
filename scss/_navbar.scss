@@ -1,0 +1,38 @@
+
+nav{
+    z-index: 980;
+}
+.uk-navbar-container{
+    .uk-navbar-nav{
+        &>li{
+            margin-right: 1px;
+            border-radius: 3px;
+            &.uk-active>a {
+                border-radius: 3px;
+                color: rgb(255, 255, 255);
+                background: lighten($base-color,2%);
+                background: linear-gradient(90deg, rgba(159,217,0,1) 35%, rgba(102,140,51,.7) 100%);
+            }
+            &>a {
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                transition: all .4s ease-in-out;
+                max-width: 100px;
+                text-align: center;
+                font-size: 12px;
+                min-height: 50px;
+                letter-spacing: 1px;
+                font-family: 'arimoregular', sans-serif;
+                &:hover{
+                    background-color: lighten($base-color,2%);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.uk-logo{
+    img{
+        max-width: 180px;
+    }
+}

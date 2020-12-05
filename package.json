@@ -1,0 +1,19 @@
+{
+  "name": "agrotax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": " parcel pages/*html --open",
+    "build":" parcel build pages/*html --public-url ./ --out-dir docs"
+  },
+  "author": "pawelpoltoraczyk@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "posthtml-img-autosize": "^0.1.6",
+    "posthtml-modules": "^0.6.4",
+    "sass": "^1.30.0",
+    "uikit": "^3.5.10"
+  }
+}

@@ -1,0 +1,12 @@
+.uk-accordion-title{
+    transition: all .3s;
+    padding: 10px;
+}
+.uk-open {
+    .uk-accordion-title{
+        color: #fff!important;
+        transition: all .3s;
+        padding: 10px;
+        background-color:$base-color-dark;
+    }
+}

@@ -1,0 +1,27 @@
+.divider{
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    &:before{
+        position: absolute;
+        content: "";
+        left: calc(50% - 50px);
+        bottom: -1px;
+        display: block;
+        height: 1px;
+        width: 100px;
+        background-color: $base-color-dark;
+    }
+    &_left{
+        &:before{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -1px;
+            display: block;
+            height: 1px;
+            width: 100px;
+            background-color: $base-color-dark;
+        }
+    }
+}

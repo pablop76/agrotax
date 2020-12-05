@@ -1,0 +1,49 @@
+body{
+    font-family: 'arimoregular', sans-serif;
+}
+picture{
+    img{
+        width: 100%;
+    }
+}
+
+.bg-base-color{
+    background-color: $base-color;
+}
+.uk-tab>.uk-active>a {
+    color: #333;
+    border-color: $base-color-dark;
+}
+.uk-button-text::before {
+    border-bottom: 1px solid $base-color-dark;
+}
+@media (min-width: 960px){
+    .uk-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+// style dla walidacji formy
+.form-error label {
+    color: tomato;
+}
+
+.form-error select,
+.form-error input[type=text],
+.form-error input[type=email],
+.form-error input[type=url],
+.form-error input[type=tel],
+.form-error textarea {
+    border-color: tomato;
+}
+
+.form select.field-error:focus,
+.form-error input[type=text]:focus,
+.form-error input[type=email]:focus,
+.form-error input[type=url]:focus,
+.form-error input[type=tel]:focus,
+.form-error textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.3);
+}

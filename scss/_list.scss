@@ -1,0 +1,29 @@
+.circle{
+    counter-reset: list-counter;
+    list-style: none;
+
+    & li{
+        margin: 1em 0; 
+        a{
+            color:$base-color-dark ;
+            font-size: 14px;
+        }
+        &:before{
+            content: counter(list-counter);
+            counter-increment: list-counter;
+            width: 1em;
+            height: 1em;
+            padding: .5em;
+            margin-right: 1em;
+            border-radius: 50%;
+            border: .25em solid #ccc;
+            background: $base-color-dark;
+            color: #fff;
+            font-family: arial;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            line-height: 1.1rem;
+        }   
+    }
+}

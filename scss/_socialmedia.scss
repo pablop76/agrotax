@@ -1,0 +1,16 @@
+.twitter,.facebook,.google{
+    color:#fff!important;
+    &:hover{
+        color: $base-color!important;
+        border: 1px solid $base-color;
+    }
+}
+.twitter{
+background-color: #1DA1F2;
+}
+.facebook{
+    background-color:  #1877f2;
+}
+.google{
+    background-color: #4285f4;
+}
