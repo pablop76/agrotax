@@ -7,4 +7,4 @@ var t;!function(i,e){"object"==typeof exports&&"undefined"!=typeof module?module
 },{}],"S3PC":[function(require,module,exports) {
 "use strict";var i=t(require("uikit/dist/js/uikit.min")),u=t(require("uikit/dist/js/uikit-icons.min"));function t(i){return i&&i.__esModule?i:{default:i}}i.default.use(u.default);
 },{"uikit/dist/js/uikit.min":"u6Rn","uikit/dist/js/uikit-icons.min":"dHzr"}]},{},["S3PC"], null)
-//# sourceMappingURL=/agrotax.b15dc5a3.js.map
+//# sourceMappingURL=agrotax.b15dc5a3.js.map
