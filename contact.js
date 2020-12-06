@@ -119,7 +119,8 @@ class FormValidate {
               const div = document.createElement("div");
               div.classList.add("form-send-error");
 
-              div.innerText = "Wysłanie wiadomości się nie powiodło";
+              div.innerHTML =
+                "<strong>Wysłanie wiadomości się nie powiodło</strong>, </br>zgłoś nam problem pod numerem tel: +48 500 365 100,</br> lub wysyłajac wiadomość na adres: biuro@agrotax.pl z własnego klienta pocztowego.";
               form.parentElement.insertBefore(div, form);
               form.remove();
             }
