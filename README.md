@@ -30,7 +30,7 @@
 
 - npm start
 
-Strona nie jest odswieżana gdy wprowadzamy zmiany w komponentach html (katalog components), można skopiować komponent html do pliku w którym jest wyswietlany, wprowadzić zmiany i po zakończonym procesie przekopiować go spowrotem.
+Strona nie jest odswieżana gdy wprowadzamy zmiany w komponentach html (katalog components), można skopiować komponent html do pliku w którym jest wyswietlany, wprowadzić zmiany i po zakończonym procesie przekopiować go spowrotem. Parcel niedomaga w tej materii :(
 
 Należy ponowniw uruchomić: npm start!
 
