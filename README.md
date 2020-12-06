@@ -39,3 +39,4 @@ Należy ponowniw uruchomić: npm start!
 2. budowanie paczki produkcyjnej
 
 - npm run build (paczka tworzona jest w katalogu docs)
+- skopiowac do paczki dodatkowe pliki .htaccess oraz form.php

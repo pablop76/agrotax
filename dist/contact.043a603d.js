@@ -307,8 +307,6 @@ var FormValidate = /*#__PURE__*/function () {
             method: method.toUpperCase(),
             body: dataToSend
           }).then(function (res) {
-            return res.json();
-          }).then(function (res) {
             button.disabled = false;
             button.classList.remove("elem-is-busy");
 
@@ -347,11 +345,6 @@ var FormValidate = /*#__PURE__*/function () {
                 form.remove();
               }
             }
-          }).catch(function (_) {
-            button.disabled = false;
-            button.classList.remove("element-is-busy");
-            console.log(res);
-            button.textContent = "błąd :(";
           });
         }
       });
@@ -394,7 +387,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64629" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56699" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -89,50 +89,42 @@ class FormValidate {
         fetch(url, {
           method: method.toUpperCase(),
           body: dataToSend,
-        })
-          .then((res) => res.json())
-          .then((res) => {
-            button.disabled = false;
-            button.classList.remove("elem-is-busy");
-            if (res.errors) {
-              res.errors.map(function (el) {
-                return '[name="' + el + '"]';
-              });
-              const selector = res.errors.join(",");
-              checkFieldsErrors(form.querySelectorAll(selector));
-            } else {
-              if (res.ok) {
-                /* ---------------------------------------------------- */
-                /*   wyświetlamy komunikat powodzenia, cieszymy sie */
-                /* ---------------------------------------------------- */
-                const div = document.createElement("div");
-                div.classList.add("form-send-success");
+        }).then((res) => {
+          button.disabled = false;
+          button.classList.remove("elem-is-busy");
+          if (res.errors) {
+            res.errors.map(function (el) {
+              return '[name="' + el + '"]';
+            });
+            const selector = res.errors.join(",");
+            checkFieldsErrors(form.querySelectorAll(selector));
+          } else {
+            if (res.ok) {
+              /* ---------------------------------------------------- */
+              /*   wyświetlamy komunikat powodzenia, cieszymy sie */
+              /* ---------------------------------------------------- */
+              const div = document.createElement("div");
+              div.classList.add("form-send-success");
 
-                div.innerHTML =
-                  "<strong>Wiadomość została wysłana</strong><span>Dziękujemy za kontakt. Postaramy się odpowiedzieć jak najszybciej</span>";
-                form.parentElement.insertBefore(div, form);
-                form.remove();
-              }
-
-              if (!res.ok) {
-                /* ---------------------------------------------------- */
-                /*   komunikat błędu, niepowodzenia */
-                /* ---------------------------------------------------- */
-                const div = document.createElement("div");
-                div.classList.add("form-send-error");
-
-                div.innerText = "Wysłanie wiadomości się nie powiodło";
-                form.parentElement.insertBefore(div, form);
-                form.remove();
-              }
+              div.innerHTML =
+                "<strong>Wiadomość została wysłana. </strong><p>Dziękujemy za kontakt. Postaramy się odpowiedzieć jak najszybciej</p>";
+              form.parentElement.insertBefore(div, form);
+              form.remove();
             }
-          })
-          .catch((_) => {
-            button.disabled = false;
-            button.classList.remove("element-is-busy");
-            console.log(res);
-            button.textContent = "błąd :(";
-          });
+
+            if (!res.ok) {
+              /* ---------------------------------------------------- */
+              /*   komunikat błędu, niepowodzenia */
+              /* ---------------------------------------------------- */
+              const div = document.createElement("div");
+              div.classList.add("form-send-error");
+
+              div.innerText = "Wysłanie wiadomości się nie powiodło";
+              form.parentElement.insertBefore(div, form);
+              form.remove();
+            }
+          }
+        });
       }
     });
   }
