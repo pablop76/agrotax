@@ -36,3 +36,8 @@ nav{
         max-width: 180px;
     }
 }
+.uk-offcanvas-bar .uk-nav-default > li > a {
+    &.uk-active{
+        color: $base-color;
+    }
+}
