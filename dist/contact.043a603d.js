@@ -9616,7 +9616,7 @@ var FormValidate = /*#__PURE__*/function () {
 
                 _div.classList.add("form-send-error");
 
-                _div.innerText = "Wysłanie wiadomości się nie powiodło";
+                _div.innerHTML = "<strong>Wysłanie wiadomości się nie powiodło</strong>, </br>zgłoś nam problem pod numerem tel: +48 500 365 100,</br> lub wysyłajac wiadomość na adres: biuro@agrotax.pl z własnego klienta pocztowego.";
                 form.parentElement.insertBefore(_div, form);
                 form.remove();
               }
@@ -9663,7 +9663,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63671" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56282" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
