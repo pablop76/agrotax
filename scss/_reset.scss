@@ -47,3 +47,13 @@ picture{
     outline: none;
     box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.3);
 }
+
+
+// dla cookie
+@media (max-width: 361px){
+    #cconsent-bar {
+        .ccb__right {
+            white-space: normal!important;
+        }
+    }
+}

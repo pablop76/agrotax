@@ -56,6 +56,11 @@ picture img {
   box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.3);
 }
 
+@media (max-width: 361px) {
+  #cconsent-bar .ccb__right {
+    white-space: normal !important;
+  }
+}
 .contact-bar {
   font-size: 12px;
 }
@@ -82,7 +87,6 @@ nav {
   color: white;
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
-  max-width: 100px;
   text-align: center;
   font-size: 12px;
   min-height: 50px;
