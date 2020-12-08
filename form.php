@@ -48,8 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <div> Phone: <a href=\"tel:$phone\">$phone</a> </div>
                     <div> Wiadomość: </div>
                     <div> $message </div>
-                    <div> Zgoda na przetwarzanie danych osobowych</div>
-                    <div>$consent</div>
+                    <div> Zgoda na przetwarzanie danych osobowych $consent</div>
                 </body>
             </html>";
 
