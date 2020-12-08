@@ -9,10 +9,13 @@
     <meta name="keywords"
         content="Biuro Rachunkowe Agrotax - Rawa Mazowiecka, Skierniewice, Tomaszów Mazowiecki, Biała Rawska, Grójec, Łódź, Prowadzenie rachunkowości, Rozliczenia z Urzędem Skarbowym, ZUS, deklaracje GUS" />
     <script src="../index.js"></script>
-
 </head>
 
 <body>
+    <!-- preloader -->
+    <div class="preloader uk-visible@s">
+        <div uk-spinner></div>
+    </div>
     <!-- kontakt bar -->
     <module href="./components/contact-bar.html"></module>
     <!-- nav bar + logo + Offcanvas -->
@@ -20,7 +23,7 @@
         locals='{"index":"uk-active","uslugi":"","kadry":"","rozliczanie":"","dochody":"","ksiegowosc":"","oferty":"","kontakt":""}'>
     </module>
     <!-- slider -->
-    <module href="./components/slideshow.html"></module>
+    <module rel="prefetch" href="./components/slideshow.html"></module>
     <!-- sekcja O NAS -->
     <div class="uk-section">
         <div class="uk-container uk-container-large">

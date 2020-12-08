@@ -1,0 +1,28 @@
+.preloader {
+    display: block;
+    align-items: center;
+    background: #F0F3EA;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    visibility: visible;
+    animation: .4s fadeIn;
+    animation-fill-mode: forwards;
+}
+
+  
+  @keyframes fadeIn {
+    from {
+      visibility: visible;
+    }
+    to {
+      visibility: hidden;
+    }
+  }
